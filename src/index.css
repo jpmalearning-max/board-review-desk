@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Instrument Serif", Georgia, serif;
+  --font-sans: "Manrope", system-ui, -apple-system, sans-serif;
+  --font-signature: "Caveat", cursive;
+
+  --color-cream: #F6F1E7;
+  --color-ink: #1E2A2E;
+  --color-slate: #4A5A63;
+  --color-accent: #0F6B6B;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #F6F1E7;
+    color: #1E2A2E;
+    font-family: var(--font-sans);
+    overflow-x: clip;
+  }
+
+  body {
+    background-color: #F6F1E7;
+    color: #1E2A2E;
+    font-family: var(--font-sans);
+    font-size: 18px;
+    line-height: 1.6;
+    overflow-x: clip;
+  }
+}
+
+.outline-serif {
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(246, 241, 231, 0.72);
+}
+
+.outline-serif-sm {
+  color: transparent;
+  -webkit-text-stroke: 1.1px rgba(246, 241, 231, 0.85);
+}
+
+.rich-panel-me {
+  background-image: linear-gradient(155deg, #1E2A2E 0%, #17464A 54%, #0F6B6B 100%);
+}
+
+.rich-panel-1 {
+  background-image: linear-gradient(135deg, #1E2A2E 0%, #18494D 52%, #0F6B6B 100%);
+}
+
+.rich-panel-2 {
+  background-image: linear-gradient(155deg, #1E2A2E 8%, #164448 56%, #0F6B6B 100%);
+}
+
+.rich-panel-3 {
+  background-image: linear-gradient(170deg, #1E2A2E 0%, #194D50 50%, #0F6B6B 100%);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

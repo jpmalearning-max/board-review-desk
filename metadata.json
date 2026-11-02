@@ -1,0 +1,6 @@
+{
+  "name": "Board Review Desk",
+  "description": "Less tracing, more boards out the door. Board intake form, board status board, and Monday list of faulty boards on sale for circuit board repair shops.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
