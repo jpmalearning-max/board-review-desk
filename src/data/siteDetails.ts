@@ -43,11 +43,11 @@ export const SITE_DETAILS = {
   finalHeadline: "Let's clear your bench and get more boards out the door.",
   year: '2026',
   images: {
-    logo: '/logo.png',
-    me: '/me.jpg',
-    work1: '/work-1.jpg',
-    work2: '/work-2.jpg',
-    work3: '/work-3.jpg',
+    logo: '/images/logo.png',
+    me: '/images/me.jpg',
+    work1: '/images/work-1.jpg',
+    work2: '/images/work-2.jpg',
+    work3: '/images/work-3.jpg',
   },
 } as const;
 
